@@ -104,6 +104,11 @@ public class Calculator {
 		return p/i;
 	}
 	
+	public double UAusRundP (double r, double p) {
+		
+		return Math.sqrt(p/r);
+	}
+	
 	
 	
 	
