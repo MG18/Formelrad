@@ -58,4 +58,9 @@ public class Calculator {
 		
 		return u*i;
 	}
+	
+	public double pAusRundI (double i, double r) {
+		
+		return (i*i)*r;
+	}
 }
