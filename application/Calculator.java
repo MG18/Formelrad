@@ -44,9 +44,8 @@ public class Calculator {
 	}
 
 	public void calculate() {
-		/* Hier auf Grund der vorhanden Werte entscheiden
-		 * welche Methode unten aufgerufen werden muss.
-		 */
+		this.leistung = pAusUundR(this.spannung, this.widerstand);
+		this.strom = iAusUundR(this.spannung, this.widerstand);
 	}
 	
 	public double pAusUundR (double u, double r) {
