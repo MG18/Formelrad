@@ -63,4 +63,10 @@ public class Calculator {
 		
 		return (i*i)*r;
 	}
+	
+	public double iAusPundR (double p, double r) {
+		
+		return Math.sqrt(p/r);
+	}
+	
 }
