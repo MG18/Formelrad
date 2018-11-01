@@ -94,6 +94,21 @@ public class Calculator {
 		return u/i;
 	}
 	
+	public double UAusRundI (double r, double i) {
+		
+		return r*i;
+	}
+	
+	public double UAusPundI (double p, double i) {
+		
+		return p/i;
+	}
+	
+	public double UAusRundP (double r, double p) {
+		
+		return Math.sqrt(p/r);
+	}
+	
 	
 	
 	
