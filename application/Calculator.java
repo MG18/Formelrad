@@ -49,7 +49,13 @@ public class Calculator {
 		 */
 	}
 	
-	/* Hier die Methoden mit den Formlen hinzuf�gen
-	 */
+	public double pAusUundR (double u, double r) {
+		
+		return (u*u)/r;
+	}
 	
+	public double pAusUundI (double u, double i) {
+		
+		return u*i;
+	}
 }
