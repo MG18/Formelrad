@@ -44,12 +44,71 @@ public class Calculator {
 	}
 
 	public void calculate() {
-		/* Hier auf Grund der vorhanden Werte entscheiden
-		 * welche Methode unten aufgerufen werden muss.
-		 */
+		this.leistung = pAusUundR(this.spannung, this.widerstand);
+		this.strom = iAusUundR(this.spannung, this.widerstand);
 	}
 	
-	/* Hier die Methoden mit den Formlen hinzuf�gen
-	 */
+	public double pAusUundR (double u, double r) {
+		
+		return (u*u)/r;
+	}
+	
+	public double pAusUundI (double u, double i) {
+		
+		return u*i;
+	}
+	
+	public double pAusRundI (double i, double r) {
+		
+		return (i*i)*r;
+	}
+	
+	public double iAusPundR (double p, double r) {
+		
+		return Math.sqrt(p/r);
+	}
+	
+	public double iAusPundU (double p, double u) {
+		
+		return p/u;
+	}
+	
+	public double iAusUundR (double u, double r) {
+		
+		return u/r;
+	}
+	
+	public double rAusPundU (double p, double u) {
+		
+		return (u*u)/p;
+	}
+		
+	public double rAusPundI (double p, double i) {
+			
+		return p/(i*i);
+	}
+	
+	public double rAusUundI (double u, double i) {
+		
+		return u/i;
+	}
+	
+	public double UAusRundI (double r, double i) {
+		
+		return r*i;
+	}
+	
+	public double UAusPundI (double p, double i) {
+		
+		return p/i;
+	}
+	
+	public double UAusRundP (double r, double p) {
+		
+		return Math.sqrt(p/r);
+	}
+	
+	
+	
 	
 }
