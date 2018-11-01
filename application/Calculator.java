@@ -94,6 +94,11 @@ public class Calculator {
 		return u/i;
 	}
 	
+	public double UAusRundI (double r, double i) {
+		
+		return r*i;
+	}
+	
 	
 	
 	
