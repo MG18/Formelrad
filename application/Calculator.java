@@ -44,8 +44,11 @@ public class Calculator {
 	}
 
 	public void calculate() {
-		this.leistung = pAusUundR(this.spannung, this.widerstand);
-		this.strom = iAusUundR(this.spannung, this.widerstand);
+		if(this.leistung == 0 && this.strom == 0) {
+			this.leistung = pAusUundR(this.spannung, this.widerstand);
+			this.strom = iAusUundR(this.spannung, this.widerstand);
+		}
+		
 	}
 	
 	public double pAusUundR (double u, double r) {

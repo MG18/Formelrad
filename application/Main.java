@@ -80,6 +80,9 @@ public class Main extends Application {
 			root.getChildren().add(btnBerechnen);
 			
 			btnBerechnen.setOnAction(e -> {
+				if(txLeistung.getText().trim().isEmpty()) {
+					txLeistung.setText("NaN");
+				}
 				Calculator myCalculator = new Calculator(
 						Double.parseDouble(txLeistung.getText()),
 						Double.parseDouble(txSpannung.getText()),
