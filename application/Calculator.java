@@ -60,6 +60,10 @@ public class Calculator {
 			this.spannung = UAusRundP(this.widerstand, this.leistung);
 			this.strom = UAusRundP(this.widerstand, this.leistung);
 		}
+		if(this.spannung == Double.NaN && this.widerstand == Double.NaN){
+			this.spannung = UAusPundI(this.leistung, this.strom);
+			this.widerstand = rAusPundI(this.leistung, this.strom);
+		}
 		
 	}
 	
