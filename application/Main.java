@@ -89,7 +89,9 @@ public class Main extends Application {
 				if(txWiderstand.getText().trim().isEmpty()) {
 					txWiderstand.setText("NaN");
 				}
-
+				if(txSpannung.getText().trim().isEmpty()) {
+					txSpannung.setText("NaN");
+				}
 				Calculator myCalculator = new Calculator(
 						Double.parseDouble(txLeistung.getText()),
 						Double.parseDouble(txSpannung.getText()),
