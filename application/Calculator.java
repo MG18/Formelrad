@@ -44,7 +44,7 @@ public class Calculator {
 	}
 
 	public void calculate() {
-		if(this.leistung == 0 && this.strom == 0) {
+		if(this.leistung == Double.NaN && this.strom == Double.NaN) {
 			this.leistung = pAusUundR(this.spannung, this.widerstand);
 			this.strom = iAusUundR(this.spannung, this.widerstand);
 		}
