@@ -48,6 +48,10 @@ public class Calculator {
 			this.leistung = pAusUundR(this.spannung, this.widerstand);
 			this.strom = iAusUundR(this.spannung, this.widerstand);
 		}
+		if (this.leistung == Double.NaN && this.spannung == Double.NaN) {
+			this.leistung = pAusRundI(this.strom, this.widerstand);
+			this.spannung = UAusRundI(this.strom, this.widerstand);
+		}
 		
 	}
 	
