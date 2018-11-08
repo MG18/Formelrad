@@ -131,7 +131,7 @@ public class Calculator {
 	}
 	
 	public double UAusRundP (double r, double p) {
-		
+		System.out.println("Math.sqrt(p/r)");
 		return Math.sqrt(p/r);
 	}
 	
