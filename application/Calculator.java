@@ -101,7 +101,7 @@ public class Calculator {
 	}
 	
 	public double iAusUundR (double u, double r) {
-		
+		System.out.println("u/r");
 		return u/r;
 	}
 	
