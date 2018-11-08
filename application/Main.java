@@ -104,6 +104,7 @@ public class Main extends Application {
 				
 				if(txWiderstand.getText().trim().isEmpty()) {
 					txWiderstand.setText("NaN");
+					txStrom.setStyle("-fx-text-fill: red;");
 				}
 				else {
 					this.counter++;
