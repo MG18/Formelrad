@@ -81,7 +81,7 @@ public class Calculator {
 	}
 	
 	public double pAusUundI (double u, double i) {
-		
+		System.out.println("u*i");
 		return u*i;
 	}
 	
