@@ -73,61 +73,65 @@ public class Calculator {
 	
 	public double pAusUundR (double u, double r) {
 		
+		
+		System.out.println("(u*u)/r");
 		return (u*u)/r;
+		
+		
 	}
 	
 	public double pAusUundI (double u, double i) {
-		
+		System.out.println("u*i");
 		return u*i;
 	}
 	
 	public double pAusRundI (double i, double r) {
-		
+		System.out.println("(i*i)*r");
 		return (i*i)*r;
 	}
 	
 	public double iAusPundR (double p, double r) {
-		
+		System.out.println("Math.sqrt(p/r)");
 		return Math.sqrt(p/r);
 	}
 	
 	public double iAusPundU (double p, double u) {
-		
+		System.out.println("p/u");
 		return p/u;
 	}
 	
 	public double iAusUundR (double u, double r) {
-		
+		System.out.println("u/r");
 		return u/r;
 	}
 	
 	public double rAusPundU (double p, double u) {
-		
+		System.out.println("(u*u)/p");
 		return (u*u)/p;
 	}
 		
 	public double rAusPundI (double p, double i) {
-			
+		System.out.println("p/(i*i)");
 		return p/(i*i);
 	}
 	
 	public double rAusUundI (double u, double i) {
-		
+		System.out.println("u/i");
 		return u/i;
 	}
 	
 	public double UAusRundI (double r, double i) {
-		
+		System.out.println("r*i");
 		return r*i;
 	}
 	
 	public double UAusPundI (double p, double i) {
-		
+		System.out.println("p/i");
 		return p/i;
 	}
 	
 	public double UAusRundP (double r, double p) {
-		
+		System.out.println("Math.sqrt(p/r)");
 		return Math.sqrt(p/r);
 	}
 	
