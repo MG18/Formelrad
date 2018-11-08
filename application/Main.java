@@ -104,7 +104,7 @@ public class Main extends Application {
 				
 				if(txWiderstand.getText().trim().isEmpty()) {
 					txWiderstand.setText("NaN");
-					txStrom.setStyle("-fx-text-fill: red;");
+					txWiderstand.setStyle("-fx-text-fill: red;");
 				}
 				else {
 					this.counter++;
@@ -112,6 +112,7 @@ public class Main extends Application {
 				
 				if(txSpannung.getText().trim().isEmpty()) {
 					txSpannung.setText("NaN");
+					txSpannung.setStyle("-fx-text-fill: red;");
 					
 				}
 				else {
