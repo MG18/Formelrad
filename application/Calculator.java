@@ -116,7 +116,7 @@ public class Calculator {
 	}
 	
 	public double rAusUundI (double u, double i) {
-		
+		System.out.println("u/i");
 		return u/i;
 	}
 	
