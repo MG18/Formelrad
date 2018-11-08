@@ -115,6 +115,7 @@ public class Main extends Application {
 				}
 				if(this.counter > 2) {
 					System.err.println("Mehr als zwei Zahlen angegeben bitte genau nur 2 Zahlen angeben !");
+					this.counter = 0;
 					return;
 				}
 				Calculator myCalculator = new Calculator(
@@ -132,6 +133,7 @@ public class Main extends Application {
 				txSpannung.setText(Double.toString(myCalculator.getSpannung()));
 				txStrom.setText(Double.toString(myCalculator.getStrom()));
 				txWiderstand.setText(Double.toString(myCalculator.getWiderstand()));
+				this.counter = 0;
 			});
 
 			Scene scene = new Scene(root, 330, 490);
