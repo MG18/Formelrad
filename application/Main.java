@@ -89,6 +89,7 @@ public class Main extends Application {
 			btnBerechnen.setOnAction(e -> {
 				if(txLeistung.getText().trim().isEmpty()) {
 					txLeistung.setText("NaN");
+					txLeistung.setStyle("-fx-text-fill: red;");
 				}
 				else {
 					this.counter++;
