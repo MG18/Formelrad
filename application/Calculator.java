@@ -111,7 +111,7 @@ public class Calculator {
 	}
 		
 	public double rAusPundI (double p, double i) {
-			
+		System.out.println("p/(i*i)");
 		return p/(i*i);
 	}
 	
