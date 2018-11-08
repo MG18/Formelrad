@@ -23,6 +23,8 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			Pane root = new Pane();
+			
+			int counter = 0;
 
 			// Creating an image
 			Image image = new Image(new FileInputStream("bin\\application\\formelradelektronik.gif"));
