@@ -96,7 +96,7 @@ public class Calculator {
 	}
 	
 	public double iAusPundU (double p, double u) {
-		
+		System.out.println("p/u");
 		return p/u;
 	}
 	
