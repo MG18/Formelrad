@@ -2,6 +2,8 @@ package application;
 
 import java.io.FileInputStream;
 
+import com.sun.prism.paint.Color;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -19,10 +21,15 @@ import javafx.scene.text.Font;
  * @version 13.09.2018
  */
 public class Main extends Application {
+	private int counter = 0;
+	
 	@Override
 	public void start(Stage primaryStage) {
+		
 		try {
 			Pane root = new Pane();
+			
+			
 
 			// Creating an image
 			Image image = new Image(new FileInputStream("bin\\application\\formelradelektronik.gif"));
@@ -80,6 +87,54 @@ public class Main extends Application {
 			root.getChildren().add(btnBerechnen);
 			
 			btnBerechnen.setOnAction(e -> {
+				
+				txLeistung.setStyle("-fx-text-fill: black;");
+				txSpannung.setStyle("-fx-text-fill: black;");
+				txWiderstand.setStyle("-fx-text-fill: black;");
+				txStrom.setStyle("-fx-text-fill: black;");
+				
+				
+				if(txLeistung.getText().trim().isEmpty()) {
+					txLeistung.setText("NaN");
+					txLeistung.setStyle("-fx-text-fill: red;");
+				}
+				else {
+					this.counter++;
+				}
+				
+				if(txStrom.getText().trim().isEmpty()) {
+					txStrom.setText("NaN");
+					txStrom.setStyle("-fx-text-fill: red;");
+				}
+				else {
+					this.counter++;
+				}
+				
+				if(txWiderstand.getText().trim().isEmpty()) {
+					txWiderstand.setText("NaN");
+					txWiderstand.setStyle("-fx-text-fill: red;");
+				}
+				else {
+					this.counter++;
+				}
+				
+				if(txSpannung.getText().trim().isEmpty()) {
+					txSpannung.setText("NaN");
+					txSpannung.setStyle("-fx-text-fill: red;");
+					
+				}
+				else {
+					this.counter++;
+				}
+				if(this.counter > 2) {
+					System.err.println("Mehr als zwei Zahlen angegeben bitte genau nur 2 Zahlen angeben !");
+					this.counter = 0;
+					txLeistung.setStyle("-fx-text-fill: black;");
+					txSpannung.setStyle("-fx-text-fill: black;");
+					txWiderstand.setStyle("-fx-text-fill: black;");
+					txStrom.setStyle("-fx-text-fill: black;");
+					return;
+				}
 				Calculator myCalculator = new Calculator(
 						Double.parseDouble(txLeistung.getText()),
 						Double.parseDouble(txSpannung.getText()),
@@ -95,6 +150,7 @@ public class Main extends Application {
 				txSpannung.setText(Double.toString(myCalculator.getSpannung()));
 				txStrom.setText(Double.toString(myCalculator.getStrom()));
 				txWiderstand.setText(Double.toString(myCalculator.getWiderstand()));
+				this.counter = 0;
 			});
 
 			Scene scene = new Scene(root, 330, 490);
