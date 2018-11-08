@@ -121,7 +121,7 @@ public class Calculator {
 	}
 	
 	public double UAusRundI (double r, double i) {
-		
+		System.out.println("r*i");
 		return r*i;
 	}
 	
