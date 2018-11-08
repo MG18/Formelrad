@@ -19,12 +19,15 @@ import javafx.scene.text.Font;
  * @version 13.09.2018
  */
 public class Main extends Application {
+	private int counter = 0;
+	
 	@Override
 	public void start(Stage primaryStage) {
+		
 		try {
 			Pane root = new Pane();
 			
-			int counter = 0;
+			
 
 			// Creating an image
 			Image image = new Image(new FileInputStream("bin\\application\\formelradelektronik.gif"));
@@ -84,6 +87,7 @@ public class Main extends Application {
 			btnBerechnen.setOnAction(e -> {
 				if(txLeistung.getText().trim().isEmpty()) {
 					txLeistung.setText("NaN");
+					this.counter++;
 				}
 				if(txStrom.getText().trim().isEmpty()) {
 					txStrom.setText("NaN");
