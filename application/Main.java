@@ -91,12 +91,18 @@ public class Main extends Application {
 				}
 				if(txStrom.getText().trim().isEmpty()) {
 					txStrom.setText("NaN");
+					this.counter++;
 				}
 				if(txWiderstand.getText().trim().isEmpty()) {
 					txWiderstand.setText("NaN");
+					this.counter++;
 				}
 				if(txSpannung.getText().trim().isEmpty()) {
 					txSpannung.setText("NaN");
+					this.counter++;
+				}
+				if(this.counter > 2) {
+					System.err.println("Mehr als zwei Zahlen angegeben bitte genau nur 2 Zahlen angeben !");
 				}
 				Calculator myCalculator = new Calculator(
 						Double.parseDouble(txLeistung.getText()),
