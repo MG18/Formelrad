@@ -2,6 +2,8 @@ package application;
 
 import java.io.FileInputStream;
 
+import com.sun.prism.paint.Color;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -94,6 +96,7 @@ public class Main extends Application {
 				
 				if(txStrom.getText().trim().isEmpty()) {
 					txStrom.setText("NaN");
+					txStrom.setStyle("-fx-text-fill: red;");
 				}
 				else {
 					this.counter++;
