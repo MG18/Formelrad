@@ -44,27 +44,27 @@ public class Calculator {
 	}
 
 	public void calculate() {
-		if(this.leistung == Double.NaN && this.strom == Double.NaN) {
+		if(Double.isNaN(this.leistung) && Double.isNaN(this.strom)) {
 			this.leistung = pAusUundR(this.spannung, this.widerstand);
 			this.strom = iAusUundR(this.spannung, this.widerstand);
 		}
-		if (this.leistung == Double.NaN && this.spannung == Double.NaN) {
+		if (Double.isNaN(this.leistung) && Double.isNaN(this.spannung)) {
 			this.leistung = pAusRundI(this.strom, this.widerstand);
 			this.spannung = UAusRundI(this.strom, this.widerstand);
 		}
-		if(this.leistung == Double.NaN && this.widerstand == Double.NaN) {
+		if(Double.isNaN(this.leistung) && Double.isNaN(this.widerstand)) {
 			this.leistung = pAusUundI(this.spannung, this.strom);
 			this.widerstand = rAusUundI(this.spannung, this.strom);
 		}
-		if(this.spannung == Double.NaN && this.strom == Double.NaN) {
+		if(Double.isNaN(this.spannung) && Double.isNaN(this.strom)) {
 			this.spannung = UAusRundP(this.widerstand, this.leistung);
 			this.strom = UAusRundP(this.widerstand, this.leistung);
 		}
-		if(this.spannung == Double.NaN && this.widerstand == Double.NaN){
+		if(Double.isNaN(this.spannung) && Double.isNaN(this.widerstand)){
 			this.spannung = UAusPundI(this.leistung, this.strom);
 			this.widerstand = rAusPundI(this.leistung, this.strom);
 		}
-		if(this.strom == Double.NaN && this.widerstand == Double.NaN) {
+		if(Double.isNaN(this.strom) && Double.isNaN(this.widerstand)) {
 			this.strom = iAusPundU(this.leistung, this.spannung);
 			this.widerstand = rAusPundU(this.leistung, this.spannung);
 		}
