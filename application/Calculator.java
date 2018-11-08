@@ -73,7 +73,11 @@ public class Calculator {
 	
 	public double pAusUundR (double u, double r) {
 		
+		
+		System.out.println("(u*u)/r");
 		return (u*u)/r;
+		
+		
 	}
 	
 	public double pAusUundI (double u, double i) {
