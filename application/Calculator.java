@@ -106,7 +106,7 @@ public class Calculator {
 	}
 	
 	public double rAusPundU (double p, double u) {
-		
+		System.out.println("(u*u)/p");
 		return (u*u)/p;
 	}
 		
