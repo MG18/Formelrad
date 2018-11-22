@@ -3,7 +3,7 @@ package application;
 /**
  * Berechnet das Formelrad
  * @author Mehmet Guel
- * @version 13.09.2018
+ * @version 22.11.2018
  */
 public class Calculator {
 	private double leistung;
