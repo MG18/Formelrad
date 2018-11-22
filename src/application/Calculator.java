@@ -103,7 +103,7 @@ public class Calculator {
 	}
 	
 	public double iAusPundR (double p, double r) {
-		System.out.println("Math.sqrt(p/r)");
+		System.out.println("Sqrt(p/r)");
 		return Math.sqrt(p/r);
 	}
 	
@@ -143,7 +143,7 @@ public class Calculator {
 	}
 	
 	public double UAusRundP (double r, double p) {
-		System.out.println("Math.sqrt(p/r)");
+		System.out.println("Sqrt(p/r)");
 		return Math.sqrt(p/r);
 	}
 	
