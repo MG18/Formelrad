@@ -28,6 +28,9 @@ public class Calculator {
 	}
 
 	public double getStrom() {
+		if(strom > 0.85) {
+			System.out.println("Diese menge Strom ist tödlich für den Menschen");
+		}
 		return strom;
 	}
 
