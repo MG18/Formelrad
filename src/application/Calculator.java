@@ -2,7 +2,7 @@ package application;
 
 /**
  * Berechnet das Formelrad
- * @author Peter Rutschmann
+ * @author Mehmet Guel
  * @version 13.09.2018
  */
 public class Calculator {
