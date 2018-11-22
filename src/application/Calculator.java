@@ -2,8 +2,8 @@ package application;
 
 /**
  * Berechnet das Formelrad
- * @author Peter Rutschmann
- * @version 13.09.2018
+ * @author Mehmet Guel
+ * @version 22.11.2018
  */
 public class Calculator {
 	private double leistung;
@@ -20,18 +20,30 @@ public class Calculator {
 	}
 	
 	public double getLeistung() {
+		if(leistung >= 100) {
+			System.out.println("der durchschnittliche Mensch erbringt eine leistung von 100 Watt pro Tag");
+		}
 		return leistung;
 	}
 	
 	public double getSpannung() {
+		if(spannung > 240) {
+			System.out.println("Diese Menge Spannung ist tödlich für den Menschen !");
+		}
 		return spannung;
 	}
 
 	public double getStrom() {
+		if(strom > 0.85) {
+			System.out.println("Diese menge Strom ist tödlich für den Menschen !");
+		}
 		return strom;
 	}
 
 	public double getWiderstand() {
+		if (widerstand > 100) {
+			System.out.println("Das ist mehr wiederstand als der Menschliche Körper erbringt.");
+		}
 		return widerstand;
 	}
 
@@ -91,7 +103,7 @@ public class Calculator {
 	}
 	
 	public double iAusPundR (double p, double r) {
-		System.out.println("Math.sqrt(p/r)");
+		System.out.println("Sqrt(p/r)");
 		return Math.sqrt(p/r);
 	}
 	
@@ -131,7 +143,7 @@ public class Calculator {
 	}
 	
 	public double UAusRundP (double r, double p) {
-		System.out.println("Math.sqrt(p/r)");
+		System.out.println("Sqrt(p/r)");
 		return Math.sqrt(p/r);
 	}
 	

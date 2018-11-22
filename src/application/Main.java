@@ -17,8 +17,8 @@ import javafx.scene.text.Font;
 
 /**
  * Formelrad Application
- * @author Peter Rutschmann
- * @version 13.09.2018
+ * @author Mehmet Guel
+ * @version 22.11.2018
  */
 public class Main extends Application {
 	private int counter = 0;
