@@ -24,12 +24,15 @@ public class Calculator {
 	}
 	
 	public double getSpannung() {
+		if(spannung > 240) {
+			System.out.println("Diese Menge Spannung ist tödlich für den Menshen !");
+		}
 		return spannung;
 	}
 
 	public double getStrom() {
 		if(strom > 0.85) {
-			System.out.println("Diese menge Strom ist tödlich für den Menschen");
+			System.out.println("Diese menge Strom ist tödlich für den Menschen !");
 		}
 		return strom;
 	}
