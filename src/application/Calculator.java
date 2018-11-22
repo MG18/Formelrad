@@ -20,7 +20,9 @@ public class Calculator {
 	}
 	
 	public double getLeistung() {
-		
+		if(leistung >= 100) {
+			System.out.println("der durchschnittliche Mensch erbringt eine leistung von 100 Watt pro Tag");
+		}
 		return leistung;
 	}
 	
