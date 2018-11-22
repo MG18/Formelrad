@@ -41,6 +41,9 @@ public class Calculator {
 	}
 
 	public double getWiderstand() {
+		if (widerstand > 100) {
+			System.out.println("Das ist mehr wiederstand als der Menschliche Körper erbringt.");
+		}
 		return widerstand;
 	}
 
