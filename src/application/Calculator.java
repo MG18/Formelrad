@@ -20,12 +20,13 @@ public class Calculator {
 	}
 	
 	public double getLeistung() {
+		
 		return leistung;
 	}
 	
 	public double getSpannung() {
 		if(spannung > 240) {
-			System.out.println("Diese Menge Spannung ist tödlich für den Menshen !");
+			System.out.println("Diese Menge Spannung ist tödlich für den Menschen !");
 		}
 		return spannung;
 	}
